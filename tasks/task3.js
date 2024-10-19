@@ -12,7 +12,7 @@ function addSuccessPercent(olympicRepresentation) {
   return olympicRepresentation.map(item => {
     let percentOfSuccess;
     if (item.athletes === 0) {
-      percentOfSuccess = '0%'; // Якщо спортсменів немає, то відсоток успіху — 0%
+      percentOfSuccess = '0%';
     } else {
       percentOfSuccess = ((item.medals / item.athletes) * 100).toFixed(1) + '%';
     }
